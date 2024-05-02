@@ -1,5 +1,5 @@
 from config import DB_FILENAME, MENU
-from db import *
+from database import *
 
 
 def print_menu() -> None:
@@ -7,7 +7,7 @@ def print_menu() -> None:
     Функция печати меню
     :return:
     """
-    print("МЕНЮ".center(40, "*"))
+    print("МЕНЮ".center(50, "*"))
     print(MENU)
 
 

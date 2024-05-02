@@ -5,7 +5,7 @@ import uuid
 from mimesis import Gender, Locale, Person
 from mimesis.builtins import RussiaSpecProvider
 
-import db as db_package
+import database
 from utils import _input
 
 person = Person(Locale.RU)
@@ -58,8 +58,8 @@ def main() -> None:
     n = _input(int, "Введите количество записей для генерации: ")
 
     db = generate_db(n)
-    db_package.print_db(db)
-    db_package.save_db(db, "db.csv")
+    database.print_db(db)
+    database.save_db(db, "db.csv")
 
 
 if __name__ == "__main__":
