@@ -1,3 +1,12 @@
+"""
+utils.py
+
+Модуль вспомогательных функций
+Программист: Воронин И.Д. гр.344
+Проверил: Дмитриева Т.А
+Дата написания: 02.05.2024
+"""
+
 import builtins
 from typing import Type, TypeVar
 
@@ -19,7 +28,7 @@ def _input(
     :param value_type: тип переменной
     :param prompt: описание ввода
     :param error_description: текст ошибки ввода
-    :return:
+    :return: полученное значение
     """
     if error_description is None:
         match value_type:

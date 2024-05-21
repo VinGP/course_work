@@ -1,3 +1,13 @@
+"""
+generate_users.py
+
+Модуль генерации данных для базы данных
+Программист: Воронин И.Д. гр.344
+Проверил: Дмитриева Т.А
+Дата написания: 02.05.2024
+"""
+
+
 import datetime
 import random
 import uuid
@@ -23,6 +33,11 @@ jobs = [
 
 
 def generate_db(n: int) -> dict:
+    """
+    Генерация базы данных
+    :param n: число записей
+    :return: база данных
+    """
     db = {}
 
     for _ in range(n):
@@ -55,6 +70,10 @@ def generate_db(n: int) -> dict:
 
 
 def main() -> None:
+    """
+    Запуск генерации базы данных
+    :return:
+    """
     n = _input(int, "Введите количество записей для генерации: ")
 
     db = generate_db(n)
